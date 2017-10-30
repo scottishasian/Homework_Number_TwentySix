@@ -22,8 +22,15 @@ class Bus {
   }
 
   public void addPassenger(Person person) {
+    if(busIsFull()){
+      return;
+    }
     int seatsLeft = passengerCount();
     passengers[seatsLeft]= person;
   }
 
+  public boolean busIsFull() {
+    return passengerCount() == passengers.length;
+    // System.out.println("The bus is full!");
+    }
 }

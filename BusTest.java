@@ -31,10 +31,18 @@ public class BusTest{
   }
 
   @Test
-  public void busHasNoSeats() {
+  public void busIsFull() {
     for(int i = 0; i < 10; i++ ){
       bus.addPassenger(person);
     }
     assertEquals(10, bus.passengerCount());
+  }
+
+  @Test
+  public void busHasNoMoreSeats() {
+    for(int i = 0; i < 10; i++ ) {
+      bus.addPassenger(person);
+    }
+    assertEquals(true, bus.busIsFull());
   }
 }
