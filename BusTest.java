@@ -30,11 +30,11 @@ public class BusTest{
     assertEquals(1, bus.passengerCount());
   }
 
-  // @Test
-  // public void busHasNoSeats() {
-  //   for(int i = 10; i > 0; i-- ){
-  //     bus.getPassengers(person);
-  //   }
-  //   assertEquals(0, bus.seatCount);
-  // }
+  @Test
+  public void busHasNoSeats() {
+    for(int i = 0; i < 10; i++ ){
+      bus.addPassenger(person);
+    }
+    assertEquals(10, bus.passengerCount());
+  }
 }
