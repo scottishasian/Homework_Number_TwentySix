@@ -33,4 +33,12 @@ class Bus {
     return passengerCount() == passengers.length;
     // System.out.println("The bus is full!");
     }
+
+  /* Adding a bus stop. If bus interacts with a bus stop,
+    if passengerCount == 10 and busStop   -- if the bus is full and the bus stop is true.
+      for(int i =0; i < passengers.length; i++) {
+        passengers[i] = null;
+    }else if {passengerCount == 0 and busStop -- if the bus is empty and the bus top is full.
+      addPassenger();
+    } */
 }
