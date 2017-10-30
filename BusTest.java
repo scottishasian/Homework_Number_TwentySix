@@ -20,5 +20,10 @@ public class BusTest{
     assertEquals("Megabus", name);
   }
 
+  @Test
+  public void hasSeats() {
+    assertEquals(10, bus.seatCount());
+  }
+
 
 }
